@@ -12,8 +12,6 @@
 
     <section class="sideBar">
 
-        <img src="./images/volleyball_bg.jpg" alt="">
-
         <div class="logo">
             <img src="./images/odin_logo.png" alt="Logo">
             <p>VOLLEY DISTRICT</p>
@@ -33,11 +31,15 @@
 
         <section class="signUpForm">
 
-            <form>
+            <div class="formIntro">
 
                 <h2>Let's do this!</h2>
 
                 <p>Please fill the following fields. <strong>All are required</strong></p>
+
+            </div>
+
+            <form>
 
                 <div class="formControl">
                     <label for="firstName">First Name: </label>
@@ -61,12 +63,12 @@
 
                 <div class="formControl">
                     <label for="userPassword">Password: </label>
-                    <input type="password" id="userPassword" name="password" required>
+                    <input type="password" id="userPassword" name="password" required minlength="8">
                 </div>
 
                 <div class="formControl">
                     <label for="confirmUserPassword">Confirm Password: </label>
-                    <input type="password" id="confirmUserPassword" name="password2" required>
+                    <input type="password" id="confirmUserPassword" name="password2" required minlength="8">
                 </div>
 
                 <div class="submission">
